@@ -1,0 +1,43 @@
+{
+  "common": {
+    "welcome": "欢迎",
+    "logout": "登出",
+    "settings": "设置",
+    "home": "首页",
+    "dashboard": "Dashboard",
+    "language": "语言"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "overview": "概览",
+    "statistics": "统计数据",
+    "welcome": "有什么可以帮忙的？"
+  },
+  "chatbot": {
+    "sendMessage": "发送消息",
+    "placeholder": "输入你的消息...",
+    "typing": "正在输入...",
+    "retry": "重试",
+    "copy": "复制",
+    "search": "搜索",
+    "newChat": "新建会话",
+    "history": "历史记录",
+    "noHistory": "暂无会话记录",
+    "deleteChat": "删除会话",
+    "today": "今天",
+    "yesterday": "昨天",
+    "thisWeek": "本周"
+  },
+  "homepage": {
+    "title": "欢迎来到 Mira",
+    "description": "智能对话助手，随时为您服务",
+    "getStarted": "开始使用",
+    "learnMore": "了解更多"
+  },
+  "Layout": {
+    "signOut": "登出",
+    "language": "语言",
+    "mockUserName": "测试用户"
+  }
+}
+

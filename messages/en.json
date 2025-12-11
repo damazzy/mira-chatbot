@@ -1,0 +1,43 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "logout": "Logout",
+    "settings": "Settings",
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "language": "Language"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "overview": "Overview",
+    "statistics": "Statistics",
+    "welcome": "What can I help you with?"
+  },
+  "chatbot": {
+    "sendMessage": "Send Message",
+    "placeholder": "Type your message...",
+    "typing": "Typing...",
+    "retry": "Retry",
+    "copy": "Copy",
+    "search": "Search",
+    "newChat": "New Chat",
+    "history": "History",
+    "noHistory": "No chat history",
+    "deleteChat": "Delete Chat",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "thisWeek": "This Week"
+  },
+  "homepage": {
+    "title": "Welcome to Mira",
+    "description": "Intelligent conversation assistant, at your service",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "Layout": {
+    "signOut": "Sign Out",
+    "language": "Language",
+    "mockUserName": "Test User"
+  }
+}
+
