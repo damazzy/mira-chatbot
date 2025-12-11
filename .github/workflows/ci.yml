@@ -42,7 +42,39 @@ jobs:
         run: pnpm build
 
   # ========================================
-  # 2. E2E 测试 (Playwright)
+  # 2. 组件交互测试 (Storybook + Vitest)
+  # ========================================
+  storybook-tests:
+    name: Component Tests
+    runs-on: ubuntu-latest
+    needs: build
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run Storybook tests
+        run: pnpm test:storybook
+
+  # ========================================
+  # 3. E2E 测试 (Playwright)
   # ========================================
   e2e-tests:
     name: E2E Tests
@@ -82,7 +114,7 @@ jobs:
           retention-days: 7
 
   # ========================================
-  # 3. 视觉回归测试 (Chromatic)
+  # 4. 视觉回归测试 (Chromatic)
   # ========================================
   chromatic:
     name: Visual Regression Tests
